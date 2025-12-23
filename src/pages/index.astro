@@ -1,35 +1,14 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/BlogPost.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babuskin.net - IT Network Services</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7fa; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: white; width: 90%; max-width: 600px; padding: 40px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); text-align: center; }
-        h1 { margin: 0 0 8px; font-size: 32px; color: #0056b3; }
-        .title { font-size: 20px; color: #444; margin-bottom: 25px; font-weight: 500; }
-        .contact { margin: 25px 0; line-height: 1.9; font-size: 16px; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .services { background: #e6f2ff; padding: 20px; border-radius: 10px; margin: 25px 0; font-size: 16px; }
-        .skills ul { list-style: none; padding: 0; margin: 20px 0; text-align: left; display: inline-block; }
-        .skills li { margin: 10px 0; font-size: 15px; }
-        .skills strong { color: #0056b3; }
-        .cta { margin-top: 30px; font-size: 18px; color: #333; }
-    </style>
-</head>
-<body>
-<Header />
-    <div class="card">
+<Layout
+	title="About Me"
+	description="Headshot picture"
+	pubDate={new Date('August 08 2025')}
+	heroImage="/headshot1.jpeg"
+>
+ <div class="card">
         <h1>IT Network Services</h1>
         <p class="title">Network Engineer & IT Consultant</p>
         
@@ -56,9 +35,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
         <p class="cta">Reliable network solutions for your business. Contact me today.</p>
     </div>
-</body>
-</html>
-		</main>
-		<Footer />
-	</body>
-</html>
+</Layout>
