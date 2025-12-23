@@ -7,57 +7,55 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Visitor!</h1>
-			<h1>Sam (Viacheslav) Babushkin</h1>
-    <div class="contact">
-        Wellford South Carolina | 772-538-8094<br>
-        Email: <a href="mailto:sam@babushkin.net">sam@babushkin.net</a><br>
-        Website: <a href="https://babushkin.net" target="_blank">babushkin.net</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/sambabushkin" target="_blank">linkedin.com/in/sambabushkin</a>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babuskin.net - IT Network Services</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #f4f7fa; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { background: white; width: 90%; max-width: 600px; padding: 40px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); text-align: center; }
+        h1 { margin: 0 0 8px; font-size: 32px; color: #0056b3; }
+        .title { font-size: 20px; color: #444; margin-bottom: 25px; font-weight: 500; }
+        .contact { margin: 25px 0; line-height: 1.9; font-size: 16px; }
+        a { color: #0056b3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .services { background: #e6f2ff; padding: 20px; border-radius: 10px; margin: 25px 0; font-size: 16px; }
+        .skills ul { list-style: none; padding: 0; margin: 20px 0; text-align: left; display: inline-block; }
+        .skills li { margin: 10px 0; font-size: 15px; }
+        .skills strong { color: #0056b3; }
+        .cta { margin-top: 30px; font-size: 18px; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>IT Network Services</h1>
+        <p class="title">Network Engineer & IT Consultant</p>
+        
+        <div class="contact">
+            Wellford South Carolina<br>
+            <strong>772-538-8094</strong><br>
+            <a href="mailto:sam@babushkin.net">sam@babushkin.net</a><br>
+            <a href="https://babushkin.net" target="_blank">babushkin.net</a> • 
+            <a href="https://linkedin.com/in/sambabushkin" target="_blank">LinkedIn Profile</a>
+        </div>
 
-    <div class="section">
-        <h2>Core Skills</h2>
-        <ul>
-            <li><strong>Networking:</strong> Fortinet, FortiManager, SD-WAN, Cisco</li>
-            <li><strong>System Administration:</strong> Windows Server 2003–2019, Active Directory, Hyper-V, RDS HA, MS SQL; Linux (RHEL, Ubuntu, CentOS, RaspiOS)</li>
-        </ul>
-    </div>
+        <div class="services">
+            <strong>Network Services:</strong><br>
+            Fortinet Network Design • Installation • SD-WAN Deployment • Firewall Configuration • Switch Configuration • System Administration • Cybersecurity Solutions
+        </div>
 
-    <div class="section">
-        <h2>Additional Skills</h2>
-        <ul>
-            <li><strong>Scripting/Automation:</strong> Python, AutoIT, Bash; Legacy: Pascal, C</li>
-            <li><strong>Enterprise Systems:</strong> ERP LN Infor</li>
-            <li><strong>Database Administration:</strong> SQL, Oracle</li>
-            <li><strong>Cybersecurity:</strong> CompTIA Security+ (expired 2024), CEH course, CompTIA PenTest course</li>
-            <li><strong>Hybrid Azure:</strong> Microsoft 365, Microsoft Teams</li>
-            <li><strong>Other:</strong> ATM technician (NCR SLM, Wincor Nixdorf), Electrician helper (safety training up to 220V)</li>
-        </ul>
-    </div>
+        <div class="skills">
+            <ul>
+                <li><strong>Core Expertise:</strong> Fortinet NSE 7.6, Cisco CCNA, SD-WAN, Windows/Linux Servers, Hyper-V, Azure Hybrid</li>
+                <li><strong>Certifications:</strong> FCP Fortinet Administrator, FortiManager, Cybersecurity Associate, Cisco CCNA</li>
+                <li><strong>Additional:</strong> Python/Bash Automation, MS SQL/Oracle, ERP Systems</li>
+            </ul>
+        </div>
 
-    <div class="section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>FCP Fortinet 7.6 Administrator – Aug 2025</li>
-            <li>FCP FortiManager 7.6 Administrator – Aug 2025</li>
-            <li>FCA Fortinet Associate in Cybersecurity – July 2025</li>
-            <li>CompTIA Security+ – Nov 2021</li>
-            <li>Cisco CCT Routing & Switching – May 2021</li>
-            <li>Cisco CCNA Routing & Switching – Nov 2019</li>
-        </ul>
+        <p class="cta">Reliable network solutions for your business. Contact me today.</p>
     </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <p>Bachelor's Degree in Computer Science</p>
-    </div>
+</body>
+</html>
 		</main>
 		<Footer />
 	</body>
