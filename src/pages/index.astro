@@ -5,26 +5,18 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam Babushkin - Resume</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; color: #333; }
-        h1 { border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        h2 { color: #007bff; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        a { color: #007bff; text-decoration: none; }
-        ul { padding-left: 20px; }
-        .contact { margin-bottom: 20px; }
-        .section { margin-bottom: 30px; }
-    </style>
-</head>
-<body>
-    <h1>Sam (Viacheslav) Babushkin</h1>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>🧑‍🚀 Hello, Visitor!</h1>
+			<h1>Sam (Viacheslav) Babushkin</h1>
     <div class="contact">
-        Wellford South Carolina| 772-538-8094<br>
+        Wellford South Carolina | 772-538-8094<br>
         Email: <a href="mailto:sam@babushkin.net">sam@babushkin.net</a><br>
         Website: <a href="https://babushkin.net" target="_blank">babushkin.net</a><br>
         LinkedIn: <a href="https://linkedin.com/in/sambabushkin" target="_blank">linkedin.com/in/sambabushkin</a>
@@ -66,5 +58,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <h2>Education</h2>
         <p>Bachelor's Degree in Computer Science</p>
     </div>
-</body>
+		</main>
+		<Footer />
+	</body>
 </html>
